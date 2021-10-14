@@ -30,6 +30,7 @@ requirements:
 test:
   requires:
     - pytest
+    - xgboost
   commands:
     - pytest --pyargs doubleml -m ci
   imports:
