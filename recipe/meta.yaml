@@ -1,5 +1,5 @@
 {% set name = "doubleml" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/D/DoubleML/DoubleML-{{ version }}.tar.gz
-  sha256: 09dda3a23c7bffe4a56b6d1c2a8e53cbafb2df721d0f861116d26e284ccdb896
+  sha256: 6eb63a07f6ee5069da12d439cf3be7c344a0b29e5d4b3d5cf97747a16b200998
 
 build:
   number: 0
@@ -38,8 +38,7 @@ test:
 
 about:
   home: https://docs.doubleml.org
-  license: MIT
-  license_family: MIT
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Double Machine Learning in Python
   description: |
