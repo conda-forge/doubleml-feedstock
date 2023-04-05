@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/doubleml-feedst
 
 Home: https://docs.doubleml.org
 
-Package license: MIT
+Package license: BSD-3-Clause
 
 Summary: Double Machine Learning in Python
 
@@ -154,7 +154,4 @@ Feedstock Maintainers
 * [@MalteKurz](https://github.com/MalteKurz/)
 * [@PhilippBach](https://github.com/PhilippBach/)
 * [@SvenKlaassen](https://github.com/SvenKlaassen/)
-
-
-<!-- dummy commit to enable rerendering -->
 
