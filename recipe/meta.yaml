@@ -26,6 +26,7 @@ requirements:
     - scipy
     - scikit-learn
     - statsmodels
+    - plotly
 
 test:
   requires:
