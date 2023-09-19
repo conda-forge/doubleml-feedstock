@@ -1,5 +1,5 @@
 {% set name = "doubleml" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/D/DoubleML/DoubleML-{{ version }}.tar.gz
-  sha256: 6aaa643c7a2999492ec2ac9468c78a3650c004153c33f6f1a23d4ac32572ba14
+  sha256: ff12e57314df9bf4859a1dde900e8f935fc2fb4740c7bc62664b49378c396132
 
 build:
   number: 0
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - joblib
     - numpy
     - pandas
@@ -27,6 +27,7 @@ requirements:
     - scikit-learn
     - statsmodels
     - plotly
+    - matplotlib-base
 
 test:
   requires:
