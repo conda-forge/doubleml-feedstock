@@ -27,7 +27,7 @@ requirements:
     - scikit-learn
     - statsmodels
     - plotly
-    - matplotlib
+    - matplotlib-base
 
 test:
   requires:
