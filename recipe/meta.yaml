@@ -1,5 +1,5 @@
 {% set name = "doubleml" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/D/DoubleML/DoubleML-{{ version }}.tar.gz
-  sha256: 2105c5b04113f978412c848432364b7612265e588bade133cb045f2077010918
+  sha256: f8f944ce9799967747bebce83ad2e0cd21bb426aa07fe010e6af87823fabcecf
 
 build:
   number: 0
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - joblib
     - numpy
     - pandas
