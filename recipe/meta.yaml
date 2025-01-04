@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/D/DoubleML/DoubleML-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/D/DoubleML/DoubleML-{{ version }}.tar.gz
   sha256: a7cc0616de1270642c38047b1a3e4657da8b26dadbe49c74543b4d7fb0be4b73
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - joblib
     - numpy
     - pandas
@@ -33,6 +33,7 @@ test:
   requires:
     - pytest
     - xgboost
+    - python {{ python_min }}
   commands:
     - pytest --pyargs doubleml -m ci
   imports:
