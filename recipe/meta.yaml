@@ -1,5 +1,5 @@
 {% set name = "doubleml" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/D/DoubleML/DoubleML-{{ version }}.tar.gz
-  sha256: a7cc0616de1270642c38047b1a3e4657da8b26dadbe49c74543b4d7fb0be4b73
+  sha256: 12b6ee7e5c01bde7708ab5ad01785433d356f3af5a5cf7bcd5dd9f6f5a0f41f4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
