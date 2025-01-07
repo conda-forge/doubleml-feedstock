@@ -14,7 +14,6 @@ build:
   noarch: python
   script:
    - {{ PYTHON }} -m pip install . -vv
-   - {{ PYTHON }} -m pip install rdrobust
 
 requirements:
   host:
@@ -30,8 +29,9 @@ requirements:
     - scikit-learn >=1.4.0,<1.6.0
     - statsmodels
     - plotly
-    - rdrobust >=1.3.0
     - matplotlib-base
+  pip:
+    - rdrobust >=1.3.0
 
 test:
   requires:
