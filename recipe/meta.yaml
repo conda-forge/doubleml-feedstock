@@ -1,5 +1,5 @@
 {% set name = "doubleml" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/D/DoubleML/{{ name }}-{{ version }}.tar.gz
-  sha256: b9b0fa1e2b554cbdd77f875aef4bef41326e6be1ed8a4a8c6c01349772c68006
+  sha256: 54d02439bfcc97704463a9727420a4cb6ebb559a870c645bbc6b21d30f09c972
 
 build:
   number: 0
@@ -21,21 +21,21 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - joblib
-    - numpy
-    - pandas
-    - scipy
-    - scikit-learn >=1.4.0
-    - statsmodels
-    - matplotlib-base
+    - joblib >=1.2.0
+    - numpy >=2.0.0
+    - pandas >=2.0.0
+    - scipy >=1.7.0
+    - scikit-learn >=1.6.0
+    - statsmodels >=0.14.0
+    - matplotlib-base >=3.9.0
     - seaborn >=0.13
-    - plotly
+    - plotly >=5.0.0
 
 test:
   requires:
-    - pytest
-    - xgboost
-    - lightgbm
+    - pytest >=8.3.0
+    - xgboost >=2.1.0
+    - lightgbm >=4.5.0
     - python {{ python_min }}
   commands:
     - pytest --pyargs doubleml -m ci
